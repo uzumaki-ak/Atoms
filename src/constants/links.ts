@@ -8,6 +8,10 @@ export const NAV_LINKS = [
         href: "/service"
     },
     {
+        name: "Experience",
+        href: "/experience"
+    },
+    {
         name: "Projects",
         href: "/projects"
     },

@@ -1,5 +1,6 @@
 "use client";
 
+import { IconBrandTelegram } from "@tabler/icons-react";
 import {
   Facebook,
   Twitter,
@@ -12,16 +13,16 @@ import {
 
 export default function Footer() {
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/mohammad-ehshan-4362a0298", label: "LinkedIn" },
+    { icon: Instagram, href: "https://www.instagram.com/hackathonwalebhaiya", label: "Instagram" },
+    { icon: IconBrandTelegram, href: "https://t.me/+dFcwrZKd88FiZjU1", label: "Telegram" },
+    { icon: Twitter, href: "https://x.com/ashmes16", label: "Twitter" },
   ];
 
   const footerLinks = [
-    { title: "About", href: "#" },
-    { title: "Services", href: "#" },
-    { title: "Portfolio", href: "#" },
+    { title: "About", href: "/about" },
+    { title: "Services", href: "/service" },
+    { title: "Portfolio", href: "https://decryptingehshan.vercel.app" },
     { title: "Contact", href: "#" },
     { title: "Privacy Policy", href: "#" },
     { title: "Terms of Service", href: "#" },
@@ -45,22 +46,21 @@ export default function Footer() {
               <img src="./icons/icon.png" alt="logo" height={70} width={70} />
             </h3>
             <p className="text-gray-300 mb-6 leading-relaxed max-w-md">
-              Creating exceptional digital experiences that drive growth and
-              innovation. We transform ideas into powerful web solutions.
+              We Code, We Create, We Launch - With Results That Speak Louder Than Just Design.
             </p>
 
             <div className="space-y-3">
               <div className="flex items-center text-gray-300">
                 <Mail className="w-5 h-5 mr-3 text-purple-400" />
-                digisol@gmail.com
+                ashmes16@gmail.com
               </div>
               <div className="flex items-center text-gray-300">
                 <Phone className="w-5 h-5 mr-3 text-purple-400" />
-                874400xxxx
+                7290970786
               </div>
               <div className="flex items-center text-gray-300">
                 <MapPin className="w-5 h-5 mr-3 text-purple-400" />
-                Chennai,TamilNadu
+                Delhi, India
               </div>
             </div>
           </div>
