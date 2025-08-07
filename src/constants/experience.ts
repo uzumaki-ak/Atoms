@@ -419,6 +419,27 @@ export const experiences:Experience[]= [
     "teamName": "Atoms & Arcane",
     "teamMembers": ["Atoms-Mohammad Ehshan","Atoms-Aditya Kumar", "Atoms-N. Aarwin","Atoms-Swayam Jha", "Arcane-Anikesh Kumar", "Arcane-Aryan Jha","Arcane-Koshal Kumar"]
   },
+  {
+    "title": "Code With DCG",
+    "organization": "Geek Room",
+    "startDate": "2025-03-16",
+    "endDate": "",
+    "location": "DTU, Delhi, India",
+    "type": "Hackathon",
+    "description": "Presented Health Sync project",
+    "projects": [
+      {
+        "name": "Health Sync",
+        "link": ""
+      }
+    ],
+    "linkedinPost": "",
+    "achievement": "",
+    "images": [],
+    "tags": [],
+    "teamName": "Arcane",
+    "teamMembers": ["Aryan Jha","N. Aarwin"]
+  },
     {
     "title": "HackWithImpact",
     "organization": "Ignite Room",
@@ -582,12 +603,12 @@ export const experiences:Experience[]= [
     "teamMembers": ["Mohammad Ehshan","N. Aarwin", "Aryan Jha", "Anikesh Kumar"]
   },
   {
-    "title": "Competition Participant",
-    "organization": "Summer of Product",
+    "title": "Summer of Product",
+    "organization": "HELLOPM",
     "startDate": "2025-06-18",
     "endDate": "2025-06-30",
     "location": "Remote",
-    "type": "Competition",
+    "type": "Case Study",
     "description": "Submitted Eco Cart and Skill Proof case studies",
     "projects": [
       {
@@ -601,37 +622,16 @@ export const experiences:Experience[]= [
     ],
     "linkedinPost": "",
     "achievement": "",
-    "images": [],
+    "images": ["/photosByEhshan/summerofproduct1.png", "/photosByEhshan/summerofproduct2.png"],
     "tags": [],
-    "teamName": "",
-    "teamMembers": []
-  },
-  {
-    "title": "Hackathon Participant",
-    "organization": "DCG",
-    "startDate": "",
-    "endDate": "",
-    "location": "DTU, Delhi, India",
-    "type": "Hackathon",
-    "description": "Presented Health Sync project",
-    "projects": [
-      {
-        "name": "Health Sync",
-        "link": ""
-      }
-    ],
-    "linkedinPost": "",
-    "achievement": "",
-    "images": [],
-    "tags": [],
-    "teamName": "",
-    "teamMembers": []
+    "teamName": "Atoms & AstraX",
+    "teamMembers": ["Atoms-Mohammad Ehshan", "Atoms-N. Aarwin","Atoms-Pooja Bhalla","Atoms-Aditya Kumar", "AstraX-Anikesh Kumar", "AstraX-Koshal Kumar","AstraX-Aryan Jha", "AstraX-Swayam Jha"]
   },
   {
     "title": "Hackathon Participant",
     "organization": "Code Clash 2.0",
-    "startDate": "",
-    "endDate": "",
+    "startDate": "2025-06-23",
+    "endDate": "2025-06-25",
     "location": "",
     "type": "Hackathon",
     "description": "Built Kaamly - AI-powered booking agent using LLMs and communication APIs",
