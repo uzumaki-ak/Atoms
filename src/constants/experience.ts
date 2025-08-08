@@ -628,34 +628,32 @@ export const experiences:Experience[]= [
     "teamMembers": ["Atoms-Mohammad Ehshan", "Atoms-N. Aarwin","Atoms-Pooja Bhalla","Atoms-Aditya Kumar", "AstraX-Anikesh Kumar", "AstraX-Koshal Kumar","AstraX-Aryan Jha", "AstraX-Swayam Jha"]
   },
   {
-    "title": "Hackathon Participant",
-    "organization": "Code Clash 2.0",
+    "title": "Code Clash 2.0",
     "startDate": "2025-06-23",
     "endDate": "2025-06-25",
     "location": "",
     "type": "Hackathon",
-    "description": "Built Kaamly - AI-powered booking agent using LLMs and communication APIs",
+    "description": "Built Kaamly - AI-powered booking agent Powered By OmniDimensionAi",
     "projects": [
       {
         "name": "Kaamly",
-        "link": "https://lnkd.in/ga4FzkAv"
+        "link": ""
       }
     ],
-    "linkedinPost": "",
+    "linkedinPost": "https://www.linkedin.com/posts/mohammad-ehshan-4362a0298_techthatmatters-hackathon-hackathonbuild-activity-7345717359694778368-3R0p",
     "achievement": "",
-    "images": [],
+    "images": [ "/photosByEhshan/codeclash1.png","/photosByEhshan/kaamly1.jpeg", "/photosByEhshan/kaamly2.jpeg"],
     "tags": [],
     "teamName": "ARCANE",
-    "teamMembers": ["Anikesh Kumar"]
+    "teamMembers": ["Anikesh Kumar","Aryan Jha", "Mohammad Ehshan"]
   },
   {
-    "title": "Hackathon Participant",
-    "organization": "APIHub",
-    "startDate": "",
-    "endDate": "",
+    "title": "APIHub",
+    "startDate": "2025-06-14",
+    "endDate": "2025-06-21",
     "location": "",
     "type": "Hackathon",
-    "description": "Presented Sparkswipe and Family Vault projects",
+    "description": "Built Sparkswipe and Family Vault given in problem statement.",
     "projects": [
       {
         "name": "Sparkswipe",
@@ -668,92 +666,89 @@ export const experiences:Experience[]= [
     ],
     "linkedinPost": "",
     "achievement": "",
-    "images": [],
+    "images": ["/photosByEhshan/apihub1.png", "/photosByEhshan/sparkswipe1.png"],
     "tags": [],
-    "teamName": "",
-    "teamMembers": []
+    "teamName": "Atoms & AstraX",
+    "teamMembers": ["Atoms-Mohammad Ehshan", "Atoms-N. Aarwin","Atoms-Aditya Kumar", "AstraX-Anikesh Kumar", "AstraX-Koshal Kumar","AstraX-Aryan Jha", "AstraX-Swayam Jha"]
   },
   {
     "title": "Mentor",
     "organization": "HackOrbit",
     "startDate": "2025-07-09",
-    "endDate": "2025-07-09",
     "location": "Remote",
     "type": "Mentorship",
-    "description": "Mentored 3,000+ participants in national-level hackathon",
+    "description": "Mentored in national-level hackathon which had over 3,000+ participants",
     "projects": [],
-    "linkedinPost": "",
+    "linkedinPost": "https://www.linkedin.com/posts/mohammad-ehshan-4362a0298_how-to-win-a-hackathon-from-a-mentor-activity-7349312409741742080-c1sq",
     "achievement": "",
-    "images": [],
+    "images": ["/photosByEhshan/hackorbit1.jpeg", "/photosByEhshan/hackorbit2.jpeg", "/photosByEhshan/hackorbit3.jpeg"],
     "tags": ["Mentor"],
-    "teamName": "",
+    "teamName": "Solo",
     "teamMembers": []
   },
   {
-    "title": "Hackathon Participant",
-    "organization": "Algoverse",
+    "title": "Algoverse",
     "startDate": "2025-07-18",
-    "endDate": "2025-07-18",
     "location": "Microsoft Office, Gurgaon, India",
     "type": "Hackathon",
     "description": "Presented De-Cognito (OSINT-based cyber investigation tool) to cybercrime experts",
     "projects": [
       {
         "name": "De-Cognito",
-        "link": "https://lnkd.in/ggUXQGeB"
+        "link": ""
       }
     ],
-    "linkedinPost": "",
+    "linkedinPost": "https://www.linkedin.com/posts/mohammad-ehshan-4362a0298_cybersecurity-osint-hackathon-activity-7353037773446000642-ryUF",
     "achievement": "Shortlisted for Offline Round",
-    "images": [],
+    "images": ["/photosByEhshan/algoverse.jpeg", "/photosByEhshan/decognito1.jpeg","/photosByEhshan/decognito2.jpeg"],
     "tags": [],
-    "teamName": "",
-    "teamMembers": ["Aditya Singh", "Pooja Bhalla", "Anikesh Kumar"]
+    "teamName": "AstraX",
+    "teamMembers": ["Mohammad Ehshan","Aditya Singh", "Pooja Bhalla", "Anikesh Kumar"]
   },
   {
     "title": "Hackathon Participant",
     "organization": "Triwizardathon",
     "startDate": "2025-08-02",
-    "endDate": "2025-08-02",
+    "endDate": "",
     "location": "Microsoft Office, Gurgaon, India",
     "type": "Hackathon",
     "description": "Presented De-Cognito project, finished in top 20/1200+ teams",
     "projects": [
       {
         "name": "De-Cognito",
-        "link": "https://lnkd.in/ggUXQGeB"
+        "link": ""
       }
     ],
     "linkedinPost": "",
     "achievement": "Top 20",
-    "images": [],
+    "images": ["/photosByEhshan/triwizard1.jpg", "/photosByEhshan/triwizard2.jpg", "/photosByEhshan/triwizard3.jpg"],
     "tags": ["Top 20"],
     "teamName": "",
     "teamMembers": []
   },
   {
-    "title": "Mentor",
+    "title": "Google Agentic Hackathon",
     "organization": "Google Cloud + Hack2skill",
-    "startDate": "",
-    "endDate": "",
-    "location": "Bangalore, India",
+    "startDate": "2025-07-26",
+    "endDate": "2025-07-27",
+    "location": "BIEC , Bangalore, India",
     "type": "Mentorship",
-    "description": "Mentored 50+ teams at largest AI hackathon (57,000+ participants)",
+    "description": "Mentored 50+ teams on Agentic Ai solutions",
     "projects": [],
     "linkedinPost": "",
-    "achievement": "",
-    "images": [],
-    "tags": ["Mentor"],
-    "teamName": "",
+    "achievement": "Mentored at largest AI hackathon",
+    "images": ["/photosByEhshan/googleagentic1.jpeg", "/photosByEhshan/googleagentic2.jpeg", "/photosByEhshan/googleagentic3.jpeg", "/photosByEhshan/googleagentic4.jpeg","/photosByEhshan/googleagentic5.jpeg", "/photosByEhshan/googleagentic6.jpeg"],
+    "tags": ["Mentor","GoogleAgentic","GuniessWorldRecord"],
+    "teamName": "Solo",
     "teamMembers": []
   },
   {
-    "title": "Developer",
+    "title": "Full Stack Developer",
     "organization": "BizByte Community",
     "startDate": "2024-11",
     "endDate": "2025-04",
     "location": "Remote",
-    "type": "Community",
+    "type": "FreeLance",
     "description": "Client-based full-stack development work",
     "projects": [],
     "linkedinPost": "",
