@@ -39,7 +39,7 @@ const teamMembers: TeamMember[] = [
     id: "2",
     name: "Md.Ehshan",
     role: "Fullstack+ContentCreator",
-    image: "./images/Ehshan.jpeg",
+    image: "./images/ehshan.jpg",
     linkedin: "https://www.linkedin.com/in/mohammad-ehshan-4362a0298/",
     instagram: "https://www.instagram.com/hackathonwalebhaiya/",
     github: "https://github.com/Mohammad-Ehshan",
@@ -47,7 +47,7 @@ const teamMembers: TeamMember[] = [
       "CSE’27 student with a strong track record in innovation and problem-solving. 3x Google Agentic AI Mentor, winner & finalist at 15+ prestigious hackathons including IIT, NSUT, and Microsoft, and participant in 30+ hackathons overall. Skilled in MERN stack, Next.js, and Generative AI, with 200+ DSA problems solved, showcasing solid algorithmic and development expertise.",
     gridSize: "large",
   },
-  {
+      {
     id: "3",
     name: "Aditya Singh",
     role: "AI-ML",
@@ -93,11 +93,11 @@ const teamMembers: TeamMember[] = [
       "Versatile fullstack developer skilled in building scalable web and mobile applications. Experienced in both frontend and backend technologies, focused on delivering seamless, high-performance user experiences across platforms. Adept at end-to-end development, from designing robust APIs to deploying polished web and app solutions.",
     gridSize: "small",
   },
-  {
+   {
     id: "7",
     name: "Swayam Jha",
     role: "IoT & Cybersecurity Specialist",
-    image: "./images/Swayam.jpg",
+    image: "./images/Swayam2.jpg",
     linkedin: "https://www.linkedin.com/in/swayam-jha-520ba9312/",
     instagram: "https://www.instagram.com/swayam_jhaa",
     github: "https://github.com/Swayam-jhaa",
