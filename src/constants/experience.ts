@@ -1043,6 +1043,23 @@ export const experiences: Experience[] = [
     "teamMembers": ["Mohammad Ehshan","N. Aarwin", "Aryan Jha", "Anikesh Kumar"]
   },
   {
+    "title": "Internship",
+    "organization": "ZordieAi",
+    "startDate": "2025-03-22",
+    "location": "Remote",
+    "type": "Internship",
+    "description": [
+      "Worked on there Website from scratch using NextJs and TailwindCss ",
+    ],
+    "projects": [],
+    "linkedinPost": "",
+    "achievement": "",
+    "images": [],
+    "tags": ["ZordieAi", "Internship", "FullStack"],
+    "teamName": "Solo",
+    "teamMembers": []
+  },
+  {
     "title": "HackDucs",
     "organization": "University of Delhi",
     "startDate": "2025-04-19",
