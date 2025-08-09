@@ -104,17 +104,7 @@ const teamMembers: TeamMember[] = [
     description:
       "SIoT and cybersecurity professional skilled in securing connected devices and networks against evolving threats. Experienced in designing and implementing robust security protocols, vulnerability assessments, and real-time monitoring for IoT ecosystems. Adept at balancing device functionality with strong security measures to ensure safe and reliable operation of smart systems.",
     gridSize: "large",
-  },
-  {
-    id: "8",
-    name: "Pawan Tiwari",
-    role: "Video Editor",
-    image: "./images/pawan.jpg",
-    instagram: "https://www.instagram.com/2005pawan/",
-    description:
-      "Skilled video editor specializing in crafting compelling visual stories through precise cutting, color grading, and effects. Experienced with industry-standard editing software to produce engaging videos for marketing, social media, and brand storytelling. Passionate about enhancing narrative flow and visual impact to captivate audiences.",
-    gridSize: "medium",
-  },
+  }
 ];
 
 const TeamCard: React.FC<{ member: TeamMember }> = ({ member }) => {
