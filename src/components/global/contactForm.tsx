@@ -19,6 +19,26 @@ export default function ContactPage() {
     message: "",
   })
   const [particles, setParticles] = useState<Array<{ id: number; x: number; y: number; delay: number }>>([])
+  const [windowWidth, setWindowWidth] = useState(1200) // Default fallback value
+
+  // Handle window resize and set initial width
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth)
+    }
+
+    // Set initial width
+    if (typeof window !== 'undefined') {
+      setWindowWidth(window.innerWidth)
+      window.addEventListener('resize', handleResize)
+    }
+
+    return () => {
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('resize', handleResize)
+      }
+    }
+  }, [])
 
   // Initialize particles for background animation
   useEffect(() => {
@@ -96,7 +116,7 @@ export default function ContactPage() {
             key={i}
             x1={-100}
             y1={i * 150}
-            x2={window.innerWidth + 100}
+            x2={windowWidth + 100} // Use state value instead of window.innerWidth
             y2={i * 150 - 200}
             stroke="url(#lineGradient)"
             strokeWidth="2"
@@ -161,10 +181,6 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-gray-950 relative overflow-hidden">
       <GeometricBackground />
-
-     
-
-        
 
       {/* Main Content */}
       <div className="relative z-10 flex items-center justify-center min-h-[calc(100vh-100px)] px-4">
