@@ -18,7 +18,7 @@ interface MetadataProps {
 export const generateMetadata = ({
   title = `Team Atoms | Expert Web & App Development & Freelance Digital Solutions`,
   description = `Team Atoms is a freelance web agency offering expert web development, design, and digital solutions tailored to your business needs. Transform your online presence with our skilled team of developers and creatives.`,
-  icons = "./icons/logo.png",
+  icons = "./icons/icon.png",
   noIndex = false,
  keywords = [
   "Atoms",

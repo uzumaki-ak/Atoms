@@ -6,7 +6,7 @@ import MobileMenu from "./mobile-menu";
 
 const Navbar = () => {
   return (
-    <header className="sticky top-0 w-full h-16 bg-background/80 backdrop-blur-sm z-50">
+    <header className="sticky top-2 w-full lg:w-1/2 lg:mt-2 lg:rounded-full lg:mx-auto h-16 bg-background/80 backdrop-blur-sm z-50">
       <Wrapper className="h-full">
         <div className="flex items-center justify-between h-full">
           <div className="flex items-center">
@@ -31,7 +31,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <div className="flex items-center gap-4">
+          {/* <div className="flex items-center gap-4">
             <Link href="#" className="hidden lg:block">
               <Button
                 variant="subtle"
@@ -41,7 +41,7 @@ const Navbar = () => {
               </Button>
             </Link>
             <MobileMenu />
-          </div>
+          </div> */}
         </div>
       </Wrapper>
     </header>
