@@ -23,9 +23,9 @@ export default function Footer() {
     { title: "About", href: "/about" },
     { title: "Services", href: "/service" },
     { title: "Portfolio", href: "https://decryptingehshan.vercel.app" },
-    { title: "Contact", href: "#" },
-    { title: "Privacy Policy", href: "#" },
-    { title: "Terms of Service", href: "#" },
+    { title: "Contact", href: "/contact" },
+    { title: "Privacy Policy", href: "/privacy" },
+    { title: "Terms of Service", href: "/terms" },
   ];
 
   return (
