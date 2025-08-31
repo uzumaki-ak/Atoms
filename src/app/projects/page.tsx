@@ -1,46 +1,3 @@
-// "use client";
-// import { projects } from "@/constants/projects";
-// import { ProjectCard } from "./_component/projectcard";
-// import { useRouter } from "next/navigation";
-
-// export default function ProjectsPage() {
-//   const router = useRouter();
-
-//   return (
-//     <div className="container mx-auto px-4 py-12">
-//       <div className="text-center mb-16">
-//         <h1 className="text-4xl md:text-6xl font-bold mb-4 relative inline-block">
-//           <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">
-//             My Projects
-//           </span>
-//         </h1>
-//         <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-//           A collection of my work showcasing problem-solving, creativity, and technical expertise
-//         </p>
-//       </div>
-
-//       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-//         {projects.map((project) => {
-//           const slug = project.name.toLowerCase().replace(/\s+/g, "-");
-//           return (
-//             <div
-//               key={slug}
-//               className="cursor-pointer transition-transform hover:scale-[1.02]"
-//               onClick={() => router.push(`/projects/${slug}`)}
-//             >
-//               <ProjectCard project={project} />
-//             </div>
-//           );
-//         })}
-//       </div>
-//     </div>
-//   );
-// }
-
-
-
-
-
 "use client";
 import { projects } from "@/constants/projects";
 import { ProjectCard } from "./_component/projectcard";
@@ -68,11 +25,11 @@ export default function ProjectsPage() {
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">
-            My Projects
+            Our Projects
           </span>
         </h1>
         <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-        My work showcasing problem-solving, creativity, and technical expertise
+        Our work showcasing problem-solving, creativity, and technical expertise
         </p>
       </div>
 
@@ -101,7 +58,7 @@ export default function ProjectsPage() {
                 className="cursor-pointer transition-transform hover:scale-[1.02]"
                 onClick={() => router.push(`/projects/${slug}`)}
               >
-                <ProjectCard project={project} />
+                <ProjectCard project={project} className="h-[550px] overflow-hidden"/>
               </div>
             );
           })}

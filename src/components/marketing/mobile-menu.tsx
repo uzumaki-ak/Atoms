@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { NAV_LINKS } from "@/constants";
@@ -7,8 +8,12 @@ import { Menu } from "lucide-react";
 import Link from "next/link";
 
 const MobileMenu = () => {
+    const [open, setOpen] = useState(false);
+
+    const handleClose = () => setOpen(false);
+
     return (
-        <Sheet>
+        <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild className="lg:hidden">
                 <Button variant="ghost" size="icon" className="lg:hidden">
                     <Menu className="h-6 w-6" />
@@ -24,12 +29,13 @@ const MobileMenu = () => {
                             key={index}
                             href={link.href}
                             className="text-base font-medium transition-colors hover:text-primary"
+                            onClick={handleClose} // ✅ closes on click
                         >
                             {link.name}
                         </Link>
                     ))}
                     <div className="pt-4 mt-4 border-t border-border">
-                        <Link href="#" className="w-full">
+                        <Link href="#" className="w-full" onClick={handleClose}>
                             <Button className="w-full" variant="blue">
                                 Get Started
                             </Button>
@@ -41,4 +47,4 @@ const MobileMenu = () => {
     )
 };
 
-export default MobileMenu
+export default MobileMenu;

@@ -179,8 +179,8 @@ export default function BusinessSolutionsPage() {
 
             {/* Spline iframe */}
             <iframe
-              // src="https://my.spline.design/websitedeveloper-mIXTgAnKxlO5spxFrD9bUMDk "
-              src="https://app.spline.design/file/13c30943-7443-49a9-b821-5d087705d7cd"
+              src="https://my.spline.design/websitedeveloper-mIXTgAnKxlO5spxFrD9bUMDk "
+              // src="https://app.spline.design/file/13c30943-7443-49a9-b821-5d087705d7cd"
               frameBorder="0"
               width="100%"
               height="100%"
