@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { CheckIcon, Zap, Star } from "lucide-react";
+import { useState } from "react";
 import Container from "../global/container";
 import { Button } from "../ui/button";
 
@@ -18,6 +19,8 @@ interface ServiceCardProps {
 }
 
 const Pricing = () => {
+  const [showTechnical, setShowTechnical] = useState(true);
+
   return (
     <div className="relative py-24 bg-gradient-to-b from-gray-900 to-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -34,113 +37,153 @@ const Pricing = () => {
           </Container>
         </div>
 
-        {/* Section 1: Technical Services */}
-        <h3 className="text-2xl font-bold text-white mt-16 mb-8 text-center">
-          Technical Services
-        </h3>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
-          {/* Starter Tech */}
-          <ServiceCard
-            title="Starter Tech"
-            price="₹9,999"
-            description="Perfect for small businesses or personal projects"
-            features={[
-              "1-page website or simple mobile app",
-              "Basic SEO setup",
-              "1-month support",
-            ]}
-            buttonText="Get Started"
-            color="gray"
-          />
-
-          {/* Professional Tech */}
-          <ServiceCard
-            title="Professional Tech"
-            price="₹24,999"
-            description="For growing businesses needing robust solutions"
-            features={[
-              "Multi-page website or mobile app",
-              "Backend integration",
-              "3-month support",
-              "SEO & analytics",
-            ]}
-            buttonText="Start Project"
-            color="blue"
-            popular
-          />
-
-          {/* Enterprise Tech */}
-          <ServiceCard
-            title="Enterprise Tech"
-            price="Custom"
-            description="Tailored solutions for large-scale projects"
-            features={[
-              "Fully custom design & development",
-              "Dedicated project manager",
-              "Scalable infrastructure",
-              "Ongoing maintenance",
-            ]}
-            buttonText="Contact Sales"
-            color="purple"
-          />
+        {/* Toggle Switch */}
+        <div className="flex justify-center mt-12">
+          <div className="flex items-center bg-gray-800 rounded-full p-1">
+            <button
+              onClick={() => setShowTechnical(true)}
+              className={`px-6 py-2 rounded-full transition-all ${showTechnical ? "bg-blue-600 text-white" : "text-gray-300 hover:text-white"}`}
+            >
+              Technical
+            </button>
+            <button
+              onClick={() => setShowTechnical(false)}
+              className={`px-6 py-2 rounded-full transition-all ${!showTechnical ? "bg-purple-600 text-white" : "text-gray-300 hover:text-white"}`}
+            >
+              Creative
+            </button>
+          </div>
         </div>
 
-        {/* Section 2: Creative & Business Services */}
-        <h3 className="text-2xl font-bold text-white mt-20 mb-8 text-center">
-          Creative & Business Services
-        </h3>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
-          {/* Starter Growth */}
-          <ServiceCard
-            title="Starter Growth"
-            price="₹4,999"
-            description="Basic content and social media support"
-            features={[
-              "4 ghostwritten articles",
-              "Basic social media posting",
-              "Content calendar",
-            ]}
-            buttonText="Get Started"
-            color="gray"
-          />
+        {/* Technical Services */}
+        <AnimatePresence mode="wait">
+          {showTechnical && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.3 }}
+            >
+              <h3 className="text-2xl font-bold text-white mt-12 mb-8 text-center">
+                Technical Services
+              </h3>
+              <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+                {/* Starter Tech */}
+                <ServiceCard
+                  title="Starter Tech"
+                  price="₹9,999"
+                  description="Perfect for small businesses or personal projects"
+                  features={[
+                    "1-page website or simple mobile app",
+                    "Basic SEO setup",
+                    "1-month support",
+                  ]}
+                  buttonText="Get Started"
+                  color="gray"
+                />
 
-          {/* Professional Growth */}
-          <ServiceCard
-            title="Professional Growth"
-            price="₹14,999"
-            description="For consistent growth and audience engagement"
-            features={[
-              "12 ghostwritten articles",
-              "Full social media management",
-              "Marketing strategy plan",
-              "Monthly analytics report",
-            ]}
-            buttonText="Start Campaign"
-            color="blue"
-            popular
-          />
+                {/* Professional Tech */}
+                <ServiceCard
+                  title="Professional Tech"
+                  price="₹24,999"
+                  description="For growing businesses needing robust solutions"
+                  features={[
+                    "Multi-page website or mobile app",
+                    "Backend integration",
+                    "3-month support",
+                    "SEO & analytics",
+                  ]}
+                  buttonText="Start Project"
+                  color="blue"
+                  popular
+                />
 
-          {/* Enterprise Growth */}
-          <ServiceCard
-            title="Enterprise Growth"
-            price="Custom Quote"
-            description="Complete creative & business growth package"
-            features={[
-              "Unlimited ghostwriting",
-              "Dedicated social media team",
-              "Brand strategy consulting",
-              "24/7 support",
-            ]}
-            buttonText="Contact Sales"
-            color="purple"
-          />
-        </div>
+                {/* Enterprise Tech */}
+                <ServiceCard
+                  title="Enterprise Tech"
+                  price="Custom"
+                  description="Tailored solutions for large-scale projects"
+                  features={[
+                    "Fully custom design & development",
+                    "Dedicated project manager",
+                    "Scalable infrastructure",
+                    "Ongoing maintenance",
+                  ]}
+                  buttonText="Contact Sales"
+                  color="purple"
+                />
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        {/* Creative & Business Services */}
+        <AnimatePresence mode="wait">
+          {!showTechnical && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.3 }}
+            >
+              <h3 className="text-2xl font-bold text-white mt-12 mb-8 text-center">
+                Creative & Business Services
+              </h3>
+              <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+                {/* Starter Growth */}
+                <ServiceCard
+                  title="Starter Growth"
+                  price="₹4,999"
+                  description="Basic content and social media support"
+                  features={[
+                    "4 ghostwritten articles",
+                    "Basic social media posting",
+                    "Content calendar",
+                  ]}
+                  buttonText="Get Started"
+                  color="gray"
+                />
+
+                {/* Professional Growth */}
+                <ServiceCard
+                  title="Professional Growth"
+                  price="₹14,999"
+                  description="For consistent growth and audience engagement"
+                  features={[
+                    "12 ghostwritten articles",
+                    "Full social media management",
+                    "Marketing strategy plan",
+                    "Monthly analytics report",
+                  ]}
+                  buttonText="Start Campaign"
+                  color="blue"
+                  popular
+                />
+
+                {/* Enterprise Growth */}
+                <ServiceCard
+                  title="Enterprise Growth"
+                  price="Custom Quote"
+                  description="Complete creative & business growth package"
+                  features={[
+                    "Unlimited ghostwriting",
+                    "Dedicated social media team",
+                    "Brand strategy consulting",
+                    "24/7 support",
+                  ]}
+                  buttonText="Contact Sales"
+                  color="purple"
+                />
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </div>
   );
 };
 
-/* Service Card Component */
+/* Service Card Component (unchanged) */
 const ServiceCard = ({
   title,
   price,

@@ -31,17 +31,9 @@ const Navbar = () => {
             </ul>
           </div>
 
-          {/* <div className="flex items-center gap-4">
-            <Link href="#" className="hidden lg:block">
-              <Button
-                variant="subtle"
-                className="hover:bg-sky-300 hover:text-black"
-              >
-                Start Now
-              </Button>
-            </Link>
+          <div className="flex items-center gap-4">
             <MobileMenu />
-          </div> */}
+          </div>
         </div>
       </Wrapper>
     </header>
