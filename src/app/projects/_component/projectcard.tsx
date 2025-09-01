@@ -21,7 +21,7 @@ export const ProjectCard = ({ project, className }: ProjectCardProps) => {
         </CardItem>
 
         <CardItem
-          as="p"
+          // as="p"
           translateZ="60"
           className="text-sm max-w-sm text-gray-300 mb-4"
         >
